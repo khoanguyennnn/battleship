@@ -1,3 +1,13 @@
+/* Name: Team 5
+ Member names & IU code:
+Nguyễn Đoàn Minh Khoa ITITIU20231
+Mai Văn Hưng ITITIU20209
+Bùi Văn Tiến Đạt ITITWE20005
+Hồ Trọng Hiếu
+Purpose: Creating a battleship game (Player vs Computer) using Javascript.
+*/
+
+
 const gamesBoardContainer = document.querySelector('#gamesboard-container')
 const optionContainer = document.querySelector('.option-container')
 const flipButton = document.querySelector('#flip-button')
