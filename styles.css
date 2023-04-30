@@ -260,13 +260,13 @@ body{
     background-color: grey;
 }
 
-/* #computer .destroyer,
+#computer .destroyer,
 #computer .submarine,
 #computer .cruiser,
 #computer .battleship,
 #computer .carrier {
     background-image: url("image/computerBlock.png");
-} */
+}
 
 #computer .destroyer:hover,
 #computer .submarine:hover,
