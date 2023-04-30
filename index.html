@@ -8,17 +8,20 @@
         <link rel="stylesheet" href="/fonts/fontawesome-6.4.0/fontawesome-free-6.4.0-web/css/all.min.css">
     </head>
     <body>  
+            <div class="player">
+                <h1 class="Player-turn"><span id="turn-display"></span></h1>
+            </div>
             <header class="header">
-                <img class="header-title" src="image/title.png" alt="">
+                <img class="header-title" src="image/title.png" alt="Battleship Image">
             </header>
             <div>
                 <div>
-                    <button onclick="hideShow()" class="button--setting">
+                    <button onclick="hideShow()" id="button-setting" class="button--setting">
                         <i id="setting-icon" class="container-icon fa-sharp fa-solid fa-sliders"></i>
                     </button>
                 </div>
                 <div class="ships-container">
-                    <div class="option-container">
+                    <div id="OC" class="option-container">
                         <div id = "0" class="destroyer-preview destroyer" draggable="true"></div>
                         <div id = "1" class="submarine-preview submarine" draggable="true"></div>
                         <div id = "2" class="cruiser-preview cruiser" draggable="true"></div>
@@ -55,13 +58,14 @@
                     
                     
             </div>
-            <div id="game-info">
-                <p class="display-status">Turn: <span id="turn-display"></span></p>
-                <p class="display-status">Info: <span id="info"></span></p>
+
+            <div class="game-finish">
+                <p class="game-finish-win"> <span id="finish-display"></span></p>
             </div>
-            
-    
-            
+            <div class="ship-sunk">
+                <img src="image/shipSunk.png" alt="Ship sunks">
+                <span id="info"></span>
+            </div>
     
             <script src="app.js"></script>
     </body>

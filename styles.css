@@ -3,6 +3,7 @@ html, body{
 }
 
 .header{
+    margin-top: 50px;
     position: relative;
     display: inline-flex;
     width: 100%;
@@ -21,7 +22,7 @@ html, body{
     align-content: center;
     justify-content: space-around;
     flex-direction: column;
-    margin-top: 20px;
+    margin-top: 50px;
     position: relative;
 }
 
@@ -150,11 +151,10 @@ body{
 }
 
 .ships-container{
-    margin-top: 20px;
-    margin-right: 20px;
-    width: 250px;
+    width: 880px;
+    top: 100px;
+    right: 0px;
     position: absolute;
-    left: 1020px;
     display: none;
 }
 
@@ -179,17 +179,6 @@ body{
     }
 }
 
-@keyframes optionContainerReduce {
-    from{
-        opacity: 1;
-        transform: scale(1);
-    }
-    to{
-        opacity: 0;
-        transform: scale(0);
-    }
-}
-
 .option-container {
     width: 880px;
     height: 300px;
@@ -198,15 +187,10 @@ body{
     flex-direction: row;
     align-items: center;
     position: relative; z-index: 10;
-    transform-origin: top right;
-    animation: optionContainerGrowth ease-in 0.2s;
     border: solid 10px linear-gradient(45deg, white, black) ;
+    transform-origin: top right;
+    animation: optionContainerGrowth 0.2s linear;
 }
-
-.option-container::before{
-    animation: optionContainerReduce ease-in 0.2s;
-}
-
 
 .container-icon:hover{
     opacity: 0.8;
@@ -276,13 +260,13 @@ body{
     background-color: grey;
 }
 
-#computer .destroyer,
+/* #computer .destroyer,
 #computer .submarine,
 #computer .cruiser,
 #computer .battleship,
 #computer .carrier {
     background-image: url("image/computerBlock.png");
-}
+} */
 
 #computer .destroyer:hover,
 #computer .submarine:hover,
@@ -302,3 +286,88 @@ body{
     background-color: grey !important;
 }
 
+.player{
+    position: absolute;
+    margin: 0;
+    width: 100%;
+    height: calc(100% - 145px);
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    z-index: 2;
+    animation: playerTurnGrowth ease-in 1.5s ;
+    transform-origin: right;
+}
+
+@keyframes playerTurnGrowth{
+    0%,100% { opacity: 0; }
+    50% { opacity: 1; }
+}
+
+.Player-turn{
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 50px;
+    border: solid 10px rgba(255, 166, 0, 0.363);
+    border-left: 0;
+    border-right: 0;
+}
+
+.game-finish{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: none;
+    justify-content: center;
+    align-content: center;
+    transform-origin: right;
+    animation: finishAnimation 0.2s ease-out;
+    background-color: rgba(247, 247, 247, 0.527);
+
+}
+
+@keyframes finishAnimation {
+    from{
+        opacity: 0;
+        transform: scale(0);
+    }
+    to{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.game-finish-win{
+    background-color: rgba(58, 57, 56, 0.579);
+    border: solid rgba(220, 216, 216, 0.564) ;
+    padding: 50px;
+    font-size: 50px;
+    font-family: "Lucida Handwriting", serif;
+    color: yellow;
+    align-self: center;
+}
+
+.ship-sunk{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    top: 0;
+    left: 0;
+    animation: finishAnimation 0.2s ease-in-out;
+}
+
+#info{
+    background-color: rgba(29, 25, 25, 0.54);
+    font-size: 25px;
+    border-radius: 50px;
+    padding: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(132, 224, 224);
+    font-weight: bold;
+}
