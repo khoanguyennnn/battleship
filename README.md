@@ -43,6 +43,8 @@ _Or Flip the ships on the container you can click on the FLIP button_ ![image](h
 * [abdullahjamal1 - BattleShipGame](https://github.com/abdullahjamal1/battleshipBoardGame?utm_source=canva&utm_medium=iframely)
 * [kubowania](https://github.com/kubowania/battleships?utm_source=canva&utm_medium=iframely)
 
+#[Click this to play the game online](https://khoanguyennnn.github.io/battleship/)
+
 
 
 
