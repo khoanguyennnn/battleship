@@ -1,5 +1,9 @@
 # BattleShip Game By Group 5 - DSA Project
 
+---
+![title](https://github.com/khoanguyennnn/battleship/assets/121242100/47e0224b-9987-4eb3-9d89-23368852735a)
+---
+
 ## Introduction:
 This is our game project for our final lab in our DSA course in semester 2 (2022 - 2023).The project is built entirely using available javascript with using html and css.
 
@@ -14,7 +18,7 @@ This is our game project for our final lab in our DSA course in semester 2 (2022
 ## Game 🕹️
 ### Technologies
 * Language: [Javascript](https://www.javascript.com/), [HTML](https://en.wikipedia.org/wiki/HTML), [CSS](https://en.wikipedia.org/wiki/CSS).
-* Framework: Visual Studio Code.
+* Framework: [Visual Studio Code](https://code.visualstudio.com/)
 
 ## How To Play? 💡
 
