@@ -13,7 +13,7 @@ This is our game project for our final lab in our DSA course in semester 2 (2022
 | 1   | Nguyen Doan Minh Khoa | ITITIU20231 |
 | 2   | Mai Van Hung          | ITITIU20209 |
 | 3   | Bui Van Tien Dat      | ITITWE20005 |
-| 4   | Ho Trong Hieu         |             |
+| 4   | Ho Trong Hieu         | ITITIU18036 |
 
 ## Game 🕹️
 ### Technologies
